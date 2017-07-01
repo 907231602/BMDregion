@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<property>
+		<name>dregion_Ipnumber</name>
+		<value>insert into dregion_Ipnumber values(?,?) ON DUPLICATE KEY UPDATE ipNum=?</value>
+	</property>
+
+	 <property>
+		<name>dregion_sessionNum</name>
+		<value>insert into dregion_sessionNum values(?,?,?,?,?,?) ON DUPLICATE KEY UPDATE sessionCount=?,sessionOutCount=?,rate=?</value>
+	</property>
+	<property>
+		<name>depth_num</name>
+		<value>insert into depth_num values(?,?,?) ON DUPLICATE KEY UPDATE count=?</value>
+	</property>
+	<property>
+		<name>ordersuccess_num</name>
+		<value>insert into ordersuccess_num values(?,?) ON DUPLICATE KEY UPDATE successCount=?</value>
+	</property>
+	
+	<property>
+		<name>order_retreat</name>
+		<value>insert into order_retreat values(?,?) ON DUPLICATE KEY UPDATE retreatCount=?</value>
+	</property>
+	<property>
+		<name>order_number_money</name>
+		<value>insert into order_number_money values(?,?,?,?) ON DUPLICATE KEY UPDATE orderCount=?,orderMoney=?</value>
+	</property>
+
+	<!--<property>
+		<name>driver</name>
+		<value>com.mysql.jdbc.Driver</value>
+	</property> -->
+
+</configuration>
